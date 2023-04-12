@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.checkout_ad{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom:10px ;
+}
+.checkout_logic{
+    padding: 20px;
+}
+h2{
+    font-weight: 900;
+    font-size: 1.7em;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+.checkout_container{
+    display: flex;
+    height: max-content;
+    background-color: white;
+    column-gap: 1em;
+}
+.checkout_content{
+    flex: 1;
+}
+.checkout_right{
+    box-shadow: 1px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+}

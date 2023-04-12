@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.subtotal{
+    background-color: #f3f3f3;
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-weight: 600;
+}
+button{
+    background-color: #FA8900;
+    border: 1px solid;
+    padding: 5px;
+    border-color: #FA8900;
+}
