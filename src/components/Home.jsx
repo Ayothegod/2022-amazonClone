@@ -8,12 +8,10 @@ const Home = () => {
       <Header/>
       <div className="home_body">
         <img className='home_body_image' src="https://m.media-amazon.com/images/I/61-8rBAD68L._SX3000_.jpg" alt="" />
-        {/* product COmponents */}
-        {/* product Id,title,price,rating,image */}
        <div className="home_body_firstrow">
           <Product 
           id='12344455'
-          title='Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition'
+          title='Cracking the Coding Interview: 189 Programming 6th Edition'
           price='24.94'
           rating={5}
           image='https://images-na.ssl-images-amazon.com/images/I/41oYsXjLvZL._SX348_BO1,204,203,200_.jpg'/>
@@ -24,36 +22,48 @@ const Home = () => {
           rating={5}
           image='https://images-na.ssl-images-amazon.com/images/I/71FuI8YvCNL.__AC_SX300_SY300_QL70_FMwebp_.jpg' />
        </div>
-       <div className="home_body_firstrow">
+       <div className="home_body_secondrow">
           <Product 
           id='12344498'
-          title='Smart Watch for Men Women Fitness: 1.69 Touch Screen Activity Tracker Waterproof Swimming Smartwatch for Android iOS'
+          title='Smart Watch for Men Women Fitness: 1.69 Touch Screen.'
           price='24.94'
           rating={5}
           image='https://m.media-amazon.com/images/I/61fAquVlzeL._AC_UY218_.jpg'/>
           <Product 
           id='12344123'
-          title='NEHEME NH525 Foldable Drones with 1080P HD Camera for Adults, RC Quadcopter WiFi FPV Live Video, Altitude Hold, Headless Mode, One Key Take Off for Kids or Beginners with 2 Batteries'
+          title='NEHEME NH525 Foldable Drones with 1080P HD Camera for Adults'
           price='49.99'
           rating={5}
           image='https://m.media-amazon.com/images/I/61fAquVlzeL._AC_UY218_.jpg'/>
           <Product 
           id='12344456'
-          title='Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition'
+          title='Cracking the Coding Interview: 189 Programming Questions.'
           price='24.94'
           rating={5}
           image='https://images-na.ssl-images-amazon.com/images/I/71FuI8YvCNL.__AC_SX300_SY300_QL70_FMwebp_.jpg'/>
        </div>
-       <div className="home_body_firstrow">
+
+       <div className="home_body_thirdrow">
           <Product 
           id='12344455'
-          title='Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition'
+          title='Cracking the Coding Interview: 189 Programming 6th Edition'
           price='24.94'
           rating={5}
           image='https://images-na.ssl-images-amazon.com/images/I/41oYsXjLvZL._SX348_BO1,204,203,200_.jpg'/>
        </div>
-       
-        
+      </div>
+      <div>
+        <p style={{textAlign:'center',fontSize:'20px'}}>More ...</p>
+        <div className='footer'>
+        <ul className='footer-ul'>
+          <li>Our Services</li>
+          <li>Refund Policy</li>
+          <li>Affiliate Program</li>
+          <li>Customer service</li>
+          <li>Refund Policy</li>
+          <li>More products</li>
+        </ul>
+        </div>
       </div>
     </div>
   )

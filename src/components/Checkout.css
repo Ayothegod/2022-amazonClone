@@ -6,10 +6,12 @@
 .checkout_ad{
     width: 100%;
     height: 100px;
+    margin: 10px 0 0 10px;
     object-fit: cover;
     object-position: top;
     margin-bottom:10px ;
 }
+
 .checkout_logic{
     padding: 20px;
 }
@@ -25,10 +27,17 @@ h2{
     background-color: white;
     column-gap: 1em;
 }
+@media (max-width:600px){
+    .checkout_container{
+        flex-direction: column;
+    }
+}
 .checkout_content{
     flex: 1;
 }
 .checkout_right{
     box-shadow: 1px 0 5px rgba(0,0,0,0.5);
     padding: 20px;
+    display: grid;
+    place-items: center;
 }

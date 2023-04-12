@@ -7,9 +7,6 @@ import { useStateValue } from '../StateProvider';
 const Header = () => {
 
 const [{basket}] = useStateValue();
-
-console.log(basket)
-
   return (
     <div className='header_container'>
       <header className="header">
@@ -22,18 +19,12 @@ console.log(basket)
           <input className='header_search_input' type="text" placeholder='Search' />
           <FaSearch className='header_search_icon'/>
         </div>
-        <Link to='/Login' className='header_links'>
+        {/* <Link to='/Login' className='header_links'>
           <div className="header_options">
-            <span>Hello</span>
+            <span>Hello </span>
             <span>Sign In</span>
           </div>
-        </Link>
-        <Link to='/' className='header_links'>
-          <div className="header_options">
-            <span>Returns</span>
-            <span>& Orders</span>
-          </div>
-        </Link>
+        </Link> */}
         <Link to='/' className='header_links'>
           <div className="header_options">
             <span>Your</span>

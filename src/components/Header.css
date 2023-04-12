@@ -1,65 +1,90 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  height: 80px;
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+}
+.header_logo {
+  width: 100px;
+  margin: 10px 20px 0;
+}
+.header_logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.header_search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.header_search .header_search_input {
+  display: flex;
+  flex: 1;
+  height: 15px;
+  padding: 20px;
+  border: none;
+}
+.header_search_icon {
+  background: #f3a847;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  font-weight: lighter;
+}
+.header_links {
+  text-decoration: none;
+  color: white;
+}
+.header_options {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.header_options > span {
+  font-size: 16px;
+}
+.header_options > span:nth-of-type(2) {
+  font-weight: 900;
+  font-size: 16px;
+}
+.header_options_cart {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.header_options_cart > span {
+  margin: 0 10px;
+}
+@media (max-width: 600px) {
+  .header_search_icon {
+    display: none;
   }
-  .header{
-    height: 80px;
-    background-color: #131921;
+  .header_search .header_search_input {
+    display: none;
+  }
+  .header_options {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+  }
+  .header_links .header_options > span {
+    font-size: 12px;
+  }
+  .header_links .header_options > span:nth-of-type(2) {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .header_options_cart {
+    font-size: 16px;
     display: flex;
     align-items: center;
   }
-  .header_logo {
-    width: 100px;
-    margin: 10px 20px 0;
-  }
-  .header_logo img{
-    width: 100%;
-    object-fit: cover;
-  }
-  .header_search{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  .header_search .header_search_input{
-    display: flex;
-    flex: 1;
-    height: 15px;
-    padding:20px;
-    border: none; 
-  }
-  .header_search_icon{
-    background:#F3A847;
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
-    padding: 5px;
-    font-weight: lighter;
-  }
-  .header_links{
-      text-decoration: none;
-      color: white;
-  }
-  .header_options{
-      display: flex;
-      flex-direction: column;
-      margin: 0 10px;
-  }
-  .header_options > span{
-      font-size: 16px;
-  }
-  .header_options > span:nth-of-type(2){
-      font-weight: 900;
-      font-size: 16px;
-  }
-  .header_options_cart{
-      font-size: 22px;
-      display: flex;
-      align-items: center;
-  }
-  .header_options_cart > span{
-      margin: 0 10px;
-  }
+}
